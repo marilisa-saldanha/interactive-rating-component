@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  /* Colors */
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --background-grey: hsla(216, 12%, 54%, 0.15);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  min-height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1 {
+  background-color: var(--dark-blue);
+  width: 22rem;
+  height: 22rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.iconStar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.iconStar img {
+  border-radius: 2rem;
+  background-color: var(--background-grey);
+  padding: .9rem;
+}
+
+.card1 h1 {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.card1 p {
+  color: var(--light-grey);
+  font-size: .87rem;
+  line-height: 1.4rem;
+}
+
+#rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+#rating button {
+  color: var(--light-grey);
+  background-color: var(--background-grey);
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
+#rating button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+#rating button:focus {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.submit {
+  background-color: var(--orange);
+  border: none;
+  padding: .7rem;
+  border-radius: 2rem;
+  color: var(--white);
+  letter-spacing: .1rem;
+  font-size: .8rem;
+  cursor: pointer;
+  transition: .8s;
+}
+
+.submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.card2 {
+  visibility: hidden;
+  position: absolute;
+  background-color: var(--dark-blue);
+  width: 22rem;
+  height: 22rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.card2 img {
+  width: 50%;
+  align-self: center;
+}
+
+.card2 h2 {
+  color: var(--orange);
+  align-self: center;
+  font-size: .8rem;
+  font-weight: 400;
+  padding: .6rem;
+  border-radius: 2rem;
+  background-color: var(--background-grey);
+}
+
+.card2 h3 {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card2 p {
+  color: var(--light-grey);
+  font-size: .87rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-size: .8rem;
+  padding: .5rem;
+}
+
+.attribution {
+  color: var(--medium-grey);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--orange);
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .card1 {
+    width: 25rem;
+    height: 25rem;
+    padding: 2rem;
+  }
+
+  .card1 h1 {
+    font-size: 1.7rem;
+  }
+  
+  .card1 p {
+    font-size: 1rem;
+  }
+
+  #rating button {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+
+  .submit {
+    padding: .8rem;
+    font-size: .9rem;
+  }
+
+  .card2 {
+    width: 25rem;
+    height: 25rem;
+    padding: 2rem;
+  }
+
+  .card2 h2 {
+    font-size: .85rem;
+    padding: .6rem;
+  }
+  
+  .card2 h3 {
+    font-size: 1.7rem;
+  }
+  
+  .card2 p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  footer {
+    font-size: .9rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .card1 {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .iconStar img {
+    width: 3.5rem;
+    border-radius: 50%;
+    padding: 1.1rem;
+  }
+
+  .card1 h1 {
+    font-size: 2rem;
+  }
+  
+  .card1 p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  #rating button {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 1.2rem;
+  }
+
+  .submit {
+    padding: .8rem;
+    font-size: 1rem;
+  }
+
+  .card2 {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .card2 h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .card2 h3 {
+    font-size: 1.9rem;
+  }
+  
+  .card2 p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 2000px) {
+  .card1 {
+    width: 37rem;
+    height: 37rem;
+  }
+
+  .card1 h1 {
+    font-size: 2.7rem;
+  }
+  
+  .card1 p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  #rating button {
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 1.5rem;
+  }
+
+  .submit {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .card2 {
+    width: 37rem;
+    height: 37rem;
+  }
+
+  .card2 h2 {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  
+  .card2 h3 {
+    font-size: 2.3rem;
+  }
+  
+  .card2 p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  footer {
+    font-size: 1.3rem;
+  }
+}
