@@ -16,33 +16,3 @@ btnSubmit.addEventListener("click", () => {
     pageResult.style.visibility = "visible"
   } 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-// const note = document.querySelectorAll('.rating button');
-
-// const result = document.querySelector('.noteResult');
-
-// note.forEach(button => {
-//   button.addEventListener('click', setRating);
-// });
-
-// function setRating() {
-//   const rating = this.dataset.rating;
-//   note.forEach(button => {
-//     button.classList.remove('active');
-//     if (button.dataset.rating <= rating) {
-//       button.classList.add('active')
-//     }
-//   })
-// };
-
