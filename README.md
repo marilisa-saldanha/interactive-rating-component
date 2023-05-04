@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/interactive-rating-component-using-html-css-flexbox-and-javascript-7b4EKV6zzV)
+- [Live Site URL](https://marilisa-saldanha.github.io/interactive-rating-component/)
 
 ## My process
 
