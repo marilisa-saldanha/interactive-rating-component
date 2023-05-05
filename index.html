@@ -13,27 +13,52 @@
     <!-- Rating state start -->
     <div class="card1">
       <div class="iconStar">
-        <img src="./images/icon-star.svg" alt="icon-star">
+        <img src="./images/icon-star.svg" alt="">
       </div>
       <h1>How did we do?</h1>
       <p>
         Please let us know how we did with your support request. All feedback is appreciated
         to help us improve our offering!
       </p>
-      <div id="rating">
-        <button class="btn" data-value="1">1</button>
-        <button class="btn" data-value="2">2</button>
-        <button class="btn" data-value="3">3</button>
-        <button class="btn" data-value="4">4</button>
-        <button class="btn" data-value="5">5</button>
-      </div>
-      <button class="submit">SUBMIT</button>
+
+      <form class="formContainer" id="ratingsForm">
+        <fieldset class="ratingContainer">
+          <legend class="visuallyHidden">Please select a rating!</legend>
+
+          <div class="ratingContainer">
+            <input type="radio" name="rating" class="ratings" id="one" value="1">
+            <label class="rating-number" for="one">1</label>
+          </div>
+
+          <div class="ratingContainer">
+            <input type="radio" name="rating" class="ratings" id="two" value="2">
+            <label class="rating-number" for="two">2</label>
+          </div>
+
+          <div class="ratingContainer">
+            <input type="radio" name="rating" class="ratings" id="three" value="3">
+            <label class="rating-number" for="three">3</label>
+          </div>
+
+          <div class="ratingContainer">
+            <input type="radio" name="rating" class="ratings" id="four" value="4">
+            <label class="rating-number" for="four">4</label>
+          </div>
+
+          <div class="ratingContainer">
+            <input type="radio" name="rating" class="ratings" id="five" value="5">
+            <label class="rating-number" for="five">5</label>
+          </div>
+        </fieldset>
+
+        <button class="btnSubmit" id="btn-submit" type="submit">SUBMIT</button>
+      </form>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
     <div class="card2"> 
-      <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+      <img src="./images/illustration-thank-you.svg" alt="">
       <h2>You selected 
         <span id="result"></span> 
         out of 5

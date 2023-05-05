@@ -69,38 +69,65 @@ main {
   line-height: 1.4rem;
 }
 
-#rating {
+.visuallyHidden {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.ratingContainer {
   display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-#rating button {
+input[type="radio"] {
+  appearance: none;
+  width: 0;
+}
+
+input[type="radio"] + label {
+  display: inline-block;
+  font-size: .9rem;
+  font-weight: 700;
   color: var(--light-grey);
   background-color: var(--background-grey);
-  display: flex;
   width: 3rem;
   height: 3rem;
+  display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   transition: .5s;
-  font-weight: 700;
-  font-size: .9rem;
 }
 
-#rating button:hover {
+input[type="radio"] + label:hover {
   background-color: var(--orange);
   color: var(--white);
 }
 
-#rating button:focus {
+input[type="radio"]:focus + label {
   background-color: var(--light-grey);
   color: var(--white);
 }
 
-.submit {
+.btnSubmit {
   background-color: var(--orange);
   border: none;
   padding: .7rem;
@@ -110,11 +137,12 @@ main {
   font-size: .8rem;
   cursor: pointer;
   transition: .8s;
+  margin-top: 1.5rem;
 }
 
-.submit:hover {
-  background-color: var(--white);
+.btnSubmit:hover {
   color: var(--orange);
+  background-color: var(--white);
 }
 
 .card2 {
@@ -189,17 +217,6 @@ footer {
     font-size: 1rem;
   }
 
-  #rating button {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 1rem;
-  }
-
-  .submit {
-    padding: .8rem;
-    font-size: .9rem;
-  }
-
   .card2 {
     width: 25rem;
     height: 25rem;
@@ -246,17 +263,6 @@ footer {
     line-height: 1.7rem;
   }
 
-  #rating button {
-    width: 4.5rem;
-    height: 4.5rem;
-    font-size: 1.2rem;
-  }
-
-  .submit {
-    padding: .8rem;
-    font-size: 1rem;
-  }
-
   .card2 {
     width: 30rem;
     height: 30rem;
@@ -294,17 +300,6 @@ footer {
   .card1 p {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  #rating button {
-    width: 5.5rem;
-    height: 5.5rem;
-    font-size: 1.5rem;
-  }
-
-  .submit {
-    padding: 1rem;
-    font-size: 1.2rem;
   }
 
   .card2 {
